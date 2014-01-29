@@ -1,6 +1,5 @@
 //in place shuffle array
-Array.prototype.shuffle = function(){
-  var a = this;
+exports.shuffle = function(a){
   for(var i = a.length - 1; i >= 1; i--){
     var j = parseInt(Math.random()*i);
     if(i !== j){
@@ -9,4 +8,4 @@ Array.prototype.shuffle = function(){
       a[i] = holder;
     }
   }
-}
+};
